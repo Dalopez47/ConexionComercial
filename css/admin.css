@@ -1,0 +1,112 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+ 
+ /*  header y fondo completo*/
+ body{
+     background-image: url(../imagenes/Fondo.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+   
+ }
+ 
+ h1{
+     font-family:sans-serif;
+     text-align: left;
+     margin-left: 60px;
+ }
+ 
+ .header{
+     background: skyblue;
+     color: midnightblue;
+     padding: 1rem 0;
+ 
+ 
+ }
+ header a{
+     text-decoration: none;
+     color: navy;
+ }
+ .logo-nav-container{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ 
+ }
+ .menu li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+   
+}
+
+.navigation ul{
+   
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+
+
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 7px;
+
+}
+.navigation ul li a:hover{
+
+    background: rgb(201, 223, 241);
+
+}
+ 
+ /*menu opciones*/
+ 
+ .options li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: midnightblue;
+    text-decoration: none;
+   
+}
+
+.options ul{
+   
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+
+
+}
+.options ul li{
+    display: inline-block;
+}
+
+.options ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 7px;
+
+}
+.options ul li a:hover{
+
+    background: rgb(201, 223, 241);
+
+}

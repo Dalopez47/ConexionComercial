@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="imagenes/logo1.jpg">
+        
+    <title> ingreso </title>
+    <link rel="stylesheet" href="css/contactoconx.css">
+
+</head>
+<body>
+
+    <!--formulario de contacto-->
+    <header class="header"> 
+
+        <div class="container logo-nav-container">
+        
+                <img src= "imagenes/logo1.jpg" width="70px"> 
+                <h1> CONEXION COMERCIAL </h1>
+        
+            <nav class="navigation"> 
+
+    <ul>
+
+        <li><a href="indexconx.html">inicio</a></li>      
+        <li><a href="registroconx.html">crear cuenta</a></li>  
+        <li><a href="ingresoconx.html">ingresa</a></li> 
+
+        </ul>
+
+    </nav> 
+</div>
+   </header>
+
+        <br/> <br/> <br/>
+     
+    <form action="ctregistro.php"  method="Post" name="form">
+        <h2> Contactanos </h2> <br/>
+        <div class="contenedorinput">
+
+            <input type="text" name="nombre" placeholder="Nombre" class="input-100" required> 
+            <input type="email" name="correo" placeholder="E-mail" class="input-100"required>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje" class="input-100" required></textarea>
+            <input type="submit" value="enviar mensaje" class="enviar"class="input-48"required>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

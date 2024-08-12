@@ -1,0 +1,325 @@
+*{ 
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+body{
+    background-image: url(../imagenes/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    font-family:sans-serif;
+    text-align: left;
+    margin-left: 60px;
+    color: rgb(13, 13, 94);
+}
+
+.header{
+    background: skyblue;
+    color: midnightblue;
+    padding: 1rem 0;
+
+
+}
+header a{
+    text-decoration: none;
+    color: navy;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.menu li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+   
+}
+
+.navigation ul{
+   
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+
+
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 7px;
+
+}
+.navigation ul li a:hover{
+
+    background: rgb(201, 223, 241);
+
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-top: 15px;
+    color: rgb(26, 26, 82);
+
+
+}
+
+
+.content-all{
+    width: 180px; 
+    margin: auto;
+    perspective: 380px; 
+    position: relative; 
+    margin-top: 50px;
+}
+
+.content-carrousel{
+    width: 80%;
+    position: absolute;
+    animation: rotar 30s infinite linear;
+    transform-style: preserve-3d;
+   
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+
+
+}
+.content-carrousel figure{
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+ }
+
+
+
+.content-carrousel figure:nth-child(1){transform: rotateY(45deg)translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(90deg)translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(135deg)translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(180deg)translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(225deg)translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(270deg)translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(315deg)translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(360deg)translateZ(300px);}
+
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale3d(1.5);
+    transition: all 300ms;
+}
+
+@keyframes rotar{ 
+    from {transform: rotateY(0deg);
+    }
+    to {transform: rotateY(360deg);
+    }
+}
+
+h3{
+    text-align: right;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: blue;
+
+
+}
+/* footer  / pie de página*/
+
+footer{
+    background: skyblue;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: rgb(26, 26, 82);
+    border-bottom: 3px solid blue;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color:  rgb(26, 26, 82);
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: rgb(26, 26, 82);
+}
+
+.div-imagen{
+    align-items: center;
+} 
+/* Galeria */
+
+.anuncios{
+    background: #f2f2f2; 
+    margin-top: 70px;  
+}
+
+/*contenedor de los anuncios*/
+
+.galeria-port{
+    display: flex ;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+}
+/* modifica solo las imagenes*/
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    object-fit: fill;
+   
+}
+
+/*controla el tamaño de las imagenes*/
+.imagen-port img{
+    width: 100%;
+    height: 200px; 
+}
+
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0); 
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*controla la imagen emergente*/
+
+.hover-galeria img{
+    width: 100%;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+/* Our team / Nuestro equipo */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    margin-top: 60px;
+}
+
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+    height: 200px;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(26, 26, 82);
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(26, 26, 82);
+}
+ 
+/*presentacion*/
+.present{
+    margin-top: 80px;
+}
+.present h3{
+    text-align: left;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: rgb(26, 26, 82);
+
+
+}
+.present p{
+    text-align: left;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: rgb(26, 26, 82);
+
+    
+
+}
